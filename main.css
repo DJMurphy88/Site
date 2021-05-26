@@ -1,14 +1,23 @@
 body {
     background-image: image("paper.jpg");
-    background-color: darkkhaki;
+    background-color: grey;
     font-size: 14px;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
-h1{
+h1 {
     font-style: italic;
     color: blue;
+}
+
+.container > * {
+    padding: 20px;
+}
+
+.container {
+    color: white;
+    display: grid;
 }
 
 p {
@@ -17,4 +26,28 @@ p {
     font-style: normal;
     font-size: 100%;
     color: black;
+}
+
+header {
+    background: skyblue;
+
+}
+
+main {
+    background: seashell;
+    color: black;
+}
+
+nav {
+    background: steelblue;
+    display: flex;
+    flex-direction: row;
+}
+
+a.nav-link {
+    padding: 0px 10px;
+}
+
+footer {
+    background: darkgrey;
 }
