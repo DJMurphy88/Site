@@ -40,14 +40,30 @@ main {
 
 nav {
     background: steelblue;
-    display: flex;
-    flex-direction: row;
+    
 }
 
-a.nav-link {
-    padding: 0px 10px;
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: #999;
+    padding: 15px;
+    text-align: center;
 }
 
 footer {
     background: darkgrey;
 }
+
+@media only screen and (max-width: 600px) {
+    ul {
+     flex-direction: column;
+    }
+  }
